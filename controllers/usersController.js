@@ -26,6 +26,7 @@ module.exports.register = async (req, res, next) => {
 };
 
 module.exports.login = async (req, res, next) => {
+    console.log("login handler called");
     try{
         console.log("Login called");
         const {username, password} = req.body;
